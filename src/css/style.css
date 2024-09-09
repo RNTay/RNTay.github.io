@@ -1,0 +1,39 @@
+.h1 {
+    text-align: center;
+}
+
+.button {
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 20%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .big-button {
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin: 5px 5px;
+  }
+  
+  .big-button:hover {
+    background-color: #696969;
+    color: white;
+  }
+
+  .small-button {
+    border: 2px solid black;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin: 2px 2px;
+  }
+  
+  .small-button:hover {
+    background-color: #696969;
+    color: white;
+  }
