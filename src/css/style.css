@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.p1 {
+  text-align: center;
+}
+
+
 body{
   padding: 10px ;
 }
@@ -59,3 +64,5 @@ body{
   clear: both;
   display: table;
 }
+
+
