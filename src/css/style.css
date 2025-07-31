@@ -54,7 +54,8 @@ body{
 .row {
         display: flex;
         justify-content: center; /* centers all columns */
-        gap: 100px; /* optional spacing between columns */
+        gap: 20px; /* optional spacing between columns */
+        padding: 10px;
     }
 
     .column {
@@ -66,4 +67,13 @@ body{
         margin: 0 auto;
     }
 
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
 
+        .column {
+            max-width: 90%;
+        }
+    }
