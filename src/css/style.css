@@ -51,18 +51,24 @@ body{
     box-sizing: border-box;
   }
   
-.row {
+    .row {
         display: flex;
-        justify-content: center; /* centers all columns */
-        gap: 20px; /* optional spacing between columns */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
         padding: 10px;
     }
 
     .column {
+        flex: 1 1 200px;
+        max-width: 300px;
         text-align: center;
     }
 
     .img-with-text img {
+        width: 100%;
+        max-width: 245px;
+        height: auto;
         display: block;
         margin: 0 auto;
     }
