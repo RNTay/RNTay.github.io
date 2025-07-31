@@ -51,18 +51,19 @@ body{
     box-sizing: border-box;
   }
   
-/* Two image containers (use 33.33% for three, and 25% for four, etc.) */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
+.row {
+        display: flex;
+        justify-content: center; /* centers all columns */
+        gap: 100px; /* optional spacing between columns */
+    }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    .column {
+        text-align: center;
+    }
+
+    .img-with-text img {
+        display: block;
+        margin: 0 auto;
+    }
 
 
