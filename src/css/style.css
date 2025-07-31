@@ -73,13 +73,14 @@ body{
         margin: 0 auto;
     }
 
-    @media (max-width: 768px) {
-        .row {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .column {
-            max-width: 90%;
-        }
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
