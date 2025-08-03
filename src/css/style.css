@@ -7,8 +7,10 @@
 }
 
 
-body{
-  padding: 10px ;
+
+
+.content {
+    padding: 0 10px 10px 10px;
 }
 
 .button {
@@ -84,3 +86,38 @@ body{
         max-width: 100%;
     }
 }
+
+
+
+
+        /* Top Navigation Bar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            transition-duration: 0.4s;
+        }
+
+        /* Prevent content from hiding behind fixed nav */
+        body {
+            margin: 0;
+            padding-top: 50px; /* Adjust if navbar height changes */
+            background-color: rgb(206, 206, 206);
+        }
