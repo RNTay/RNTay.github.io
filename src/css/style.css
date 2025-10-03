@@ -128,34 +128,11 @@ h1.myname {
         }
 
 
-@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-}
-
-@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-  font-style: italic, oblique;
-}
-
-@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-  font-weight: bold;
-  font-style: italic, oblique;
-}
 
         /* Prevent content from hiding behind fixed nav */
         body {
             margin: 0;
             padding-top: 50px; /* Adjust if navbar height changes */
             background-color: rgb(206, 206, 206);
-            font-family: "Computer Modern", sans-serif;
+            font-family: "Verdana", sans-serif;
         }
