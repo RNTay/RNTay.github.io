@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+
+
+\usepackage[left=2.2cm,right=2.2cm,top=2.5cm,bottom=2.5cm]{geometry} 
+
+
+
+\title{Test document}
+\author{author}
+\date{date}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[round]{natbib}
+\usepackage{datetime}
+
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[capitalise, nameinlink]{cleveref}
+\usepackage{breakcites}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    linkcolor={red!70!black},
+    citecolor={green!45!black},
+    urlcolor={blue!80!black}
+}
+
+
+\begin{document}
+
+
+\maketitle
+
+Here I have a citation \cite{book}. Hyperlink works fine
+
+Here I have another citation \cite*{paper}.
+
+All good so far. In this line, I have a bit of filler text before I cite the paper again \cite*{paper}. Suddenly, if you tried to hover your mouse over these hyperlinks, they don't work anymore. The hyperlink is not over the green text and is strangely in the middle of the sentence over non-highlighted words (in this case, it's the words ``have a bit ... again''. I face this issue whenever the citation wraps around a line.
+
+
+
+
+\renewcommand \refname{Bibliography and References}
+\addcontentsline{toc}{section}{Bibliography and References}
+\begin{flushleft}
+	\bibliography{biblio.bib}
+\end{flushleft}
+\bibliographystyle{plainnat}
+\nocite{*}
+
+
+\end{document}
+
+
+
