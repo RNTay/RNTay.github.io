@@ -127,6 +127,13 @@ h1.myname {
             transition-duration: 0.4s;
         }
 
+        .navbar a.active {
+    background-color: rgb(100, 100, 100); /* Lighter than your body bg */
+    color: white; /* Darker text for contrast */
+    font-weight: bold;
+    border-radius: 4px;
+}
+
 
 
         /* Prevent content from hiding behind fixed nav */
